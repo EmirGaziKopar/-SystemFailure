@@ -17,11 +17,8 @@ public class uydu : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        transform.Rotate(0, 0, 2);
+        transform.Rotate(0, 0, 5);
 
-        if (Input.GetKey(KeyCode.D)) 
-        {
-
-        }
+        
     }
 }
