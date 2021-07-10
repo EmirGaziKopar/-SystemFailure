@@ -23,7 +23,7 @@ public class MetalicPlatform : MonoBehaviour
         {
             if (slowly < 1)
             {
-                slowly += Time.deltaTime;
+                slowly += Time.deltaTime * 0.2f;
             }
             
             spriteRenderer.color = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b, slowly);
