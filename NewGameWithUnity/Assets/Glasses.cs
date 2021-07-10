@@ -11,8 +11,12 @@ public class Glasses : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Destroy(this.gameObject);
-        control = true;
+        if(collision.tag == "hero")
+        {
+            Destroy(this.gameObject);
+            control = true;
+        }
+        
 
     }
 
