@@ -20,12 +20,12 @@ public class button : MonoBehaviour
     {
         if(sol)
         {
-            transform.localScale = new Vector3(1.084042f, 1.084042f, 1);
+            transform.localScale = new Vector3(0.6f, 0.6f, 1);
             transform.position += new Vector3(-astro_hareket.astro_hiz * astro_hareket.hiz_katsayisi, 0, 0);
         }
         if(sag)
         {
-            transform.localScale = new Vector3(1.084042f, 1.084042f, 1);
+            transform.localScale = new Vector3(0.6f, 0.6f, 1);
             transform.position += new Vector3(astro_hareket.astro_hiz * astro_hareket.hiz_katsayisi, 0, 0);
         }
 
