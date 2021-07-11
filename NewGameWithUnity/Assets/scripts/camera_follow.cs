@@ -44,7 +44,7 @@ public class camera_follow : MonoBehaviour
 
         }
 
-        astro_hareket.rb_astro.gravityScale = astro_hareket.astronot_genel_hiz;
+        
 
     }
 
