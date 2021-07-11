@@ -140,9 +140,14 @@ public class astro_hareket : MonoBehaviour //MonoBehavior'dan türetilmiþ aslýnda
             ads.Play();
             
         }
-        
 
-        
+        if (collision.gameObject.tag == "spike")
+        {
+            Debug.Log("Spike");
+            GameManager.Instance.RestartGame();
+        }
+
+
 
     }
     private void OnTriggerExit2D(Collider2D collision)
@@ -222,6 +227,9 @@ public class astro_hareket : MonoBehaviour //MonoBehavior'dan türetilmiþ aslýnda
 
 
     }
+
+
+    
     private void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "ufo")
@@ -231,6 +239,7 @@ public class astro_hareket : MonoBehaviour //MonoBehavior'dan türetilmiþ aslýnda
             sprite.sortingOrder = -5; //order'in layer deðiþti 
 
         }
+        
 
         
     }
