@@ -60,7 +60,7 @@ public class astro_hareket : MonoBehaviour //MonoBehavior'dan türetilmiþ aslýnda
         animator.SetBool("yere_indi", false);
         if (benzin_miktar > 0)
         {
-            benzin_miktar -= 0.0001f;
+            
             canbar.transform.localScale = new Vector3(benzin_miktar, 1, 1);
         }
         
@@ -162,12 +162,12 @@ public class astro_hareket : MonoBehaviour //MonoBehavior'dan türetilmiþ aslýnda
         
             
         
-        if(collision.tag == "coins")
+        if(collision.tag == "BugBugBug")
         {
-            if ( benzin_miktar < 1f)
+            if ( benzin_miktar < 1.1f)
             {
                 coins++;
-                benzin_miktar += 0.05f;
+                benzin_miktar -= 0.25f;
                 Debug.Log("Coin toplandi !!! ");
                 // Tepkimeye giren gameObject'e eriþip yok ediyoruz  
                                                //rend.material.color = Color.black;//
