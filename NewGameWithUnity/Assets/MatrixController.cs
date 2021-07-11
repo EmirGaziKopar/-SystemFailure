@@ -25,7 +25,9 @@ public class MatrixController : MonoBehaviour
         if (Bocek.BocekisDead == true)
         {
             var emission = particleSystem.emission;
-            emission.rateOverTime = bitis;
+            emission.rateOverTime = 500f;
+
+            Debug.Log("Buraya girildi");
         }
         
     }
