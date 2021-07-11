@@ -439,6 +439,7 @@ GameObject:
   - component: {fileID: 122744861}
   - component: {fileID: 122744860}
   - component: {fileID: 122744859}
+  - component: {fileID: 122744862}
   m_Layer: 0
   m_Name: stars(ps)
   m_TagString: Untagged
@@ -5232,6 +5233,21 @@ Transform:
   m_Father: {fileID: 519420032}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -180.725, y: 1.1880035, z: 0}
+--- !u!114 &122744862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 122744858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89c5d63b6b8f08940a463de5fb1b10ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particleSystem: {fileID: 122744860}
+  baslangic: 0
+  bitis: 0
 --- !u!1001 &129844140
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10516,6 +10532,7 @@ GameObject:
   - component: {fileID: 1888453115}
   - component: {fileID: 1888453117}
   - component: {fileID: 1888453116}
+  - component: {fileID: 1888453118}
   m_Layer: 0
   m_Name: stars(ps) (1)
   m_TagString: Untagged
@@ -15309,6 +15326,21 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!114 &1888453118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1888453114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89c5d63b6b8f08940a463de5fb1b10ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particleSystem: {fileID: 1888453117}
+  baslangic: 0
+  bitis: 0
 --- !u!1 &1913429706 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2941687904088857874, guid: 4f848ce0ef34aed4b92ca35f8bfda2ee, type: 3}
