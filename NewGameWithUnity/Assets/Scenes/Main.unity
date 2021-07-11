@@ -9086,6 +9086,7 @@ GameObject:
   - component: {fileID: 1576247548}
   - component: {fileID: 1576247547}
   - component: {fileID: 1576247549}
+  - component: {fileID: 1576247550}
   m_Layer: 0
   m_Name: board-158973_1280
   m_TagString: Untagged
@@ -9177,6 +9178,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1576247550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1576247546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3826145c64c7cd845badeb775e8bab6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 1576247549}
 --- !u!1 &1642177583
 GameObject:
   m_ObjectHideFlags: 0
