@@ -35,9 +35,10 @@ public class GameManager : MonoBehaviour
         StartCoroutine(RestartGameAsync());
     }
 
-
     private IEnumerator RestartGameAsync()
     {
+        
+        
         yield return SceneManager.LoadSceneAsync("Main"); //yield return - > Bu method bittikten sonra çalýþmaya devam edecek. 
     }
 

@@ -13,8 +13,7 @@ public class astro_hareket : MonoBehaviour //MonoBehavior'dan türetilmiþ aslýnda
     public float benzin;
     public static float astronot_genel_hiz = 1f;
     public float yatay=1000;
-    protected Joystick joystick;
-    protected Joybutton joybutton;
+  
     static Renderer rend;
     public bool isDead = false;
     public static int coins;
@@ -37,8 +36,6 @@ public class astro_hareket : MonoBehaviour //MonoBehavior'dan türetilmiþ aslýnda
         astronot_genel_hiz = 1f;
         gravity_scale = 2f;
         isDead = false;
-        joystick = FindObjectOfType<Joystick>();
-        joybutton = FindObjectOfType<Joybutton>();
         // örneðin oyun baþlangýç müziði
         rend = GetComponent<Renderer>();
         sprite = GetComponent<SpriteRenderer>();
@@ -145,6 +142,16 @@ public class astro_hareket : MonoBehaviour //MonoBehavior'dan türetilmiþ aslýnda
         {
             Debug.Log("Spike");
             GameManager.Instance.RestartGame();
+        }
+        if (collision.gameObject.tag == "spike2")
+        {
+            Debug.Log("Spike2");
+            GameManager1.Instance.RestartGame();
+        }
+        if (collision.gameObject.tag == "spike3")
+        {
+            Debug.Log("Spike3");
+            GameManager3.Instance.RestartGame();
         }
 
 

@@ -17,8 +17,15 @@ TagManager:
   - score
   - highscore
   - background
-  - spike
+  - portal
+  - Turnike
+  - orange
+  - blue
   - BugBugBug
+  - spike
+  - spike2
+  - diken
+  - spike3
   layers:
   - Default
   - TransparentFX
