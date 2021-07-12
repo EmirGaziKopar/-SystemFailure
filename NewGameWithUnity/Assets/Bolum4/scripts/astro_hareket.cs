@@ -18,7 +18,7 @@ public class astro_hareket : MonoBehaviour //MonoBehavior'dan türetilmiþ aslýnda
     public bool isDead = false;
     public static int coins;
     public static float hiz_katsayisi = 0.3f; //kofti
-    public float gravity_scale = 2f;
+    public float gravity_scale = 1f;
     public static Rigidbody2D rb_astro; //Astronotumun üzerinde bir rigitbody var evet fakat ben ona oyun içersinden kod içersinden nasýl müdehale edeceðim rigit body cinsinden bir referans sayesinde 
     public SpriteRenderer sprite;
     int kontrol = 0; //false 
@@ -34,7 +34,7 @@ public class astro_hareket : MonoBehaviour //MonoBehavior'dan türetilmiþ aslýnda
     {
         animator = GetComponent<Animator>();
         astronot_genel_hiz = 1f;
-        gravity_scale = 2f;
+        gravity_scale = 1f;
         isDead = false;
         // örneðin oyun baþlangýç müziði
         rend = GetComponent<Renderer>();
@@ -174,7 +174,7 @@ public class astro_hareket : MonoBehaviour //MonoBehavior'dan türetilmiþ aslýnda
             if ( benzin_miktar < 1.1f)
             {
                 coins++;
-                benzin_miktar -= 0.25f;
+                benzin_miktar -= 0.999f;
                 Debug.Log("Coin toplandi !!! ");
                 // Tepkimeye giren gameObject'e eriþip yok ediyoruz  
                                                //rend.material.color = Color.black;//
